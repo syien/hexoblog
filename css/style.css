@@ -391,7 +391,7 @@ main input {
   height: 76px;
   width: 100%;
   background-image: url("images/topography.svg");
-  background-color: #f9f9f9;
+  background-color: rgba(249,249,249,0.75);
   z-index: 11;
 }
 #index-header:before,
@@ -569,6 +569,7 @@ main input {
 }
 .search-wrapper .input-holder .search-icon {
   position: absolute;
+  right: 0;
   border: 1px solid #0087ca;
   border-radius: 50%;
   background: #f9f9f9;
@@ -962,8 +963,7 @@ main {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  background: #ebebeb;
-  border-radius: 20px;
+  background: #f9f9f9;
   border: 1px solid #cadcec;
   z-index: 1;
   transition: all 0.3s ease-in;
@@ -982,10 +982,10 @@ main {
   -ms-transition: all 0.3s ease-out;
 }
 .article-share-input {
-  width: 210px;
+  width: 230px;
   background: none;
   font: 0.9rem "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  padding: 0 15px;
+  padding: 0 10px;
   color: #007bbb;
   outline: none;
   border-style: none;
@@ -993,7 +993,7 @@ main {
   overflow: hidden;
 }
 .article-share-links {
-  border-top: 2px solid #0087ca;
+  border-top: 3px solid #0087ca;
   height: 40px;
   display: -webkit-box;
   display: -moz-box;
@@ -1001,11 +1001,11 @@ main {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -moz-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-justify-content: space-evenly;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-flex-align: center;
