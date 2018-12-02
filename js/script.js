@@ -1,3 +1,30 @@
+// Adobe fonts 思源
+(function(d) {
+		var config = {
+		kitId: 'tsg1jlb',
+		scriptTimeout: 3000,
+		async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+
+//Search part
+function searchToggle(obj, evt){
+	var container = $(obj).closest('.search-wrapper');
+
+	if(!container.hasClass('active')){
+		  container.addClass('active');
+		  evt.preventDefault(); 
+	}
+	else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+		  container.removeClass('active');
+		  // clear input
+		  container.find('.search-input').val('');
+		  // clear and hide result container when we press close
+		  //container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+	}
+};
+
 //Share part
 (function($){
     $('body').on('click', function(){
@@ -81,29 +108,3 @@
 //	});
 })(jQuery);
 
-// Adobe fonts 思源
-(function(d) {
-    var config = {
-		kitId: 'tsg1jlb',
-		scriptTimeout: 3000,
-		async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-})(document);
-
-//Search part
-function searchToggle(obj, evt){
-	var container = $(obj).closest('.search-wrapper');
-
-	if(!container.hasClass('active')){
-		  container.addClass('active');
-		  evt.preventDefault(); 
-	}
-	else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-		  container.removeClass('active');
-		  // clear input
-		  container.find('.search-input').val('');
-		  // clear and hide result container when we press close
-		  //container.find('.result-container').fadeOut(100, function(){$(this).empty();});
-	}
-}

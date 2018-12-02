@@ -568,6 +568,7 @@ main input {
   -ms-transition-delay: 0.15s;
 }
 .search-wrapper .input-holder .search-icon {
+  position: absolute;
   border: 1px solid #0087ca;
   border-radius: 50%;
   background: #f9f9f9;
