@@ -1,6 +1,3 @@
-import commentBox from 'syien.github.io';
-		commentBox('5709998948614144-proj');
-
 //Share part
 (function($){
     $('body').on('click', function(){

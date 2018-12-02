@@ -96,7 +96,7 @@
             </section>
             <footer class="article-footer">
                 <!-- share -->
-                <a data-rul="" data-id="cjp6o4wj7001bu7qk420fwaaq" class="article-share-link">share</a>
+                <a data-rul="" data-id="cjp6p83b30001udqk7pdod8o3" class="article-share-link">share</a>
                 <!-- tags -->
                 
             </footer><hr id="archive-hr">
@@ -105,7 +105,6 @@
         <!-- シエン siengithub -->
         
              <section id="comments">
-    <div class="commentbox"></div>
     <div id="disqus_thread">
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
@@ -133,11 +132,27 @@
 	</div>
 </footer>
         
-
+	<script>
+		// Disqus (comment box)
+		/* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+		
+		var disqus_config = function () {
+		this.page.url = 'https://sien.github.io/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = '/about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		this.page.title = 'どうした';
+		};
+		
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://sien77.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+
 
     <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
     <script src="/fancybox/jquery.fancybox.min.js"></script>
